@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHIKI-CHAT</title>
+<style>
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #E2ECF0; */
+    /* background-image:
+    radial-gradient(#add8d6 20%, transparent 20%),
+    radial-gradient(#cceeec 20%, transparent 20%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px; */
+  background-image: linear-gradient(to bottom right, #6A82FB, #FC5C7D);
+  overflow-x: hidden;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    /* background-color: #ffffff; */
+    background-image: url('bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    background-color: #c6f6ff;
+    gap: 20px;
+  }
+
+  .nav-link {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    width: 100%;
+    height: 50%;
+    /* background-image: linear-gradient(to bottom right, #6A82FB, #FC5C7D); */
+    background-image: url('1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #add8d6;
+    /* border: 3px solid #af040d; */
+    color: #ffffff;
+  }
+
+
+
+  .app-image {
+    max-width: 300px;
+  }
+
+  .app-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 100px 50px;
+    text-align: center;
+  }
+
+  .feature-item {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .feature-image {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .feature-title {
+    color: #333;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+
+  .feature-text {
+    color: #666;
+  }
+
+  .update-section {
+    background-color: #ffffff;
+    padding: 50px;
+    margin-top: 50px;
+  }
+
+  .update-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .update-item {
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+  }
+
+  .update-detail {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div>SHIKI-CHAT</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link">ホーム</a></li>
+      <li><a href="#" class="nav-link">機能について</a></li>
+      <li><a href="#" class="nav-link">料金案内</a></li>
+      <li><a href="#" class="nav-link">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero"></div>
+<div class="app-features">
+  <div class="feature-item">
+    <img src="10.png" alt="feature 1" class="feature-image" />
+    <h3 class="feature-title">1. 個性のあるシキちゃんと会話ができる</h3>
+    <p class="feature-text">ChatGPTの機能を搭載したAIが、あなたとの居心地の良い会話を提供します。</p>
+  </div>
+  
+  <div class="feature-item">
+    <img src="14.png" alt="feature 2" class="feature-image" />
+    <h3 class="feature-title">2. デートをすることで親密度を上げることができる</h3>
+    <p class="feature-text">デート機能では、ユーザのインタラクティブなアクションによって、シキちゃんの親密度に影響がでます。</p>
+  </div>
+  
+  <div class="feature-item">
+    <img src="15.png" alt="feature 3" class="feature-image" />
+    <h3 class="feature-title">3. シキちゃんが歌う曲を聴くことができる</h3>
+    <p class="feature-text">好きな曲を選択して聴くことができます。曲のカスタマイズをすることで自分だけのプレイリストを作ろう。</p>
+  </div>
+</div>
+
+<div class="update-section">
+  <h2 class="update-title">その他の機能として・・・</h2>
+  <div class="update-item">
+    <strong>3.5</strong>
+    <span class="update-detail">毎日占い機能</span>
+  </div>
+  <div class="update-item">
+    <strong>3.4</strong>
+    <span class="update-detail">じゃんけん機能</span>
+  </div>
+  <div class="update-item">
+    <strong>3.3</strong>
+    <span class="update-detail">シキちゃん質問箱</span>
+  </div>
+  <div class="update-item">
+    <strong>3.2</strong>
+    <span class="update-detail">曲のリクエスト</span>
+  </div>
+</div>
+<div class="update-section">
+  <div class="update-item">
+    <span class="update-detail">ニュース</span>
+    <span class="update-detail">開発会社</span>
+    <span class="update-detail">プライバシーポリシー</span>
+    <span class="update-detail">お問い合わせ</span>
+    <span class="update-detail">利用規約</span>
+    <span class="update-detail">個人情報保護方針</span>
+  </div>
+</div>
+</body>
+</html>
